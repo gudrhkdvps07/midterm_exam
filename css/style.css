@@ -1,0 +1,167 @@
+body {
+  font: sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header  */
+header {
+  background-color: #31363f;
+  color: white;
+  padding-top: 30px;
+  min-height: 70px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+header li {
+  display: inline;
+  padding: 0 10px;
+  float: left;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+  /*헤더 밑의 하이라이트와 커런트 모두에게적용한다는 뜻*/
+  color: #7696ae;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #aaaaaa;
+  font-weight: bold;
+}
+
+/* formtest */
+
+#formtest {
+  background-color: #31363f;
+  padding: 15px;
+  color: white;
+}
+
+#formtest h1 {
+  text-align: center;
+}
+
+#formtest form {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.button_1 {
+  border-radius: 5px;
+  height: 38px;
+  background-color: #7696ae;
+  border: 0;
+  padding: 0 20px;
+  color: white;
+}
+
+/* main col */
+
+article#main-col {
+  width: 65%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.text h1 {
+  font-size: 38px;
+  font-weight: bolder;
+}
+
+.text {
+  margin: 35px;
+}
+
+ul#company li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 2px;
+  background-color: #e6e6e6;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+.boo {
+  color: #9f9f9f;
+}
+
+/*이미지 */
+img {
+  max-width: 500px;
+  width: 70%;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  background-color: #7696ae;
+  text-align: center;
+}
+
+/* Media Quaries  */
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #formtest h1,
+  #formtest form,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #formtest button,
+  .quote button,
+  header li {
+    display: block;
+    width: 100%;
+  }
+}

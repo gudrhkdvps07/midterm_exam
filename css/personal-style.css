@@ -1,0 +1,185 @@
+body {
+  font: sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header  */
+header {
+  background-color: #31363f;
+  color: white;
+  padding-top: 30px;
+  min-height: 70px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+header li {
+  display: inline;
+  padding: 0 10px;
+  float: left;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+  /*헤더 밑의 하이라이트와 커런트 모두에게적용한다는 뜻*/
+  color: #7696ae;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #aaaaaa;
+  font-weight: bold;
+}
+
+/* formtest */
+
+#formtest {
+  background-color: #31363f;
+  padding: 15px;
+  color: white;
+}
+
+#formtest h1 {
+  text-align: center;
+}
+
+#formtest form {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.button_1 {
+  border-radius: 5px;
+  height: 38px;
+  background-color: #7696ae;
+  border: 0;
+  padding: 0 20px;
+  color: white;
+}
+
+/* 그리드 레이아웃 */
+
+.grid h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.grid-container {
+  margin-bottom: 80px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  border-radius: 20px;
+  border: #e2e1e1 solid 2px;
+  background-color: #e7e6e6;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  width: 60%;
+}
+
+.hcjdemo {
+  max-width: 600px;
+  width: 70%;
+  height: auto;
+  align-items: center;
+}
+
+.go {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #7696ae;
+  background-color: #b0c5d7;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #6a6a6a;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  background-color: #7696ae;
+  text-align: center;
+}
+
+/* Media Quaries  */
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #formtest h1,
+  #formtest form {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #formtest button,
+  .quote button,
+  header li {
+    display: block;
+    width: 100%;
+  }
+
+  .grid-item {
+    border-radius: 20px;
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 80%;
+  }
+}

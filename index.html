@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프로그래밍 | 홈</title>
+    <link rel="stylesheet" href="./css/indexstyle.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">My</span> Portfolio</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">홈</a></li>
+            <li><a href="personal.html">포트폴리오</a></li>
+            <li><a href="student.html">팀프로젝트</a></li>
+            <li><a href="secon.html">SECON2024</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <div class="animation">
+          <h1>Hello!</h1>
+          <h2>I'm Yunji Park</h2>
+          <p>HTML5, CSS3, Javascript, Bootstrap, Web Design</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <a href="https://getbootstrap.com/"
+            ><img src="./img/bootstrap.png"
+          /></a>
+          <h3>BootStrap</h3>
+          <p>
+            부트스트랩(Bootstrap) 이란 프론트엔드 개발자들이 널리 사용하는
+            프레임워크입니다. 부트스트랩은 이미 만들어져있는 페이지 템플릿을
+            무료, 유료로 제공하고 있기 때문에 해당 템플릿을 받아 페이지를
+            디자인하면 아주 손쉽게 아름다운 서비스 페이지를 만들 수 있습니다.
+          </p>
+        </div>
+        <div class="box">
+          <a href="https://tailwindcss.com/">
+            <img src="./img/tailwind.png"
+          /></a>
+          <h3>TailwindCss</h3>
+          <p>
+            Tailwind CSS는 사용자 정의 가능한 CSS 프레임워크로, HTML 요소에
+            빠르고 쉽게 스타일을 적용할 수 있도록 도와줍니다. 기존의 CSS
+            프레임워크와 달리 클래스 기반으로 스타일을 적용하며, 효율적인 작업
+            흐름과 재사용 가능한 컴포넌트를 제공합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="title">
+      <h1>이 홈페이지에 사용된 "박스모델"</h1>
+    </div>
+    <div class="textbox">
+      <h3>박스모델 확인법</h3>
+      <p><b>개발자 도구 창에서 박스모델 확인 가능</b></p>
+      <p>웹 브라우저에서 웹 문서 열기</p>
+
+      <p>박스모델 확인할 부분을 마우스 오른쪽 버튼으로 누른 뒤 [검사] 선택</p>
+
+      <p>개발자 도구 창 위에서 [Computed] 탭 클릭</p>
+
+      <p>해당 부분의 박스 모델이 그림으로 표시됨</p>
+    </div>
+
+    <section class="felxlayout">
+      <div class="layout">
+        <article>
+          <div class="flexbox">
+            <div class="item">
+              <h3>Content</h3>
+              <img src="./img/content.png" alt="content 부분" />
+              <p>실제 콘텐츠들이 들어가는 부분이다.</p>
+            </div>
+            <div class="item">
+              <h3>Padding</h3>
+              <img src="./img/paddingpng.png" alt="padding 부분" />
+              <p>테두리와 콘텐츠 간의 여백이다.</p>
+            </div>
+            <div class="item">
+              <h3>Border</h3>
+              <img src="./img/border.png" alt="border 부분" />
+              <p>margin과 padding의 경계 부분이며 테두리라고 불린다.</p>
+            </div>
+            <div class="item">
+              <h3>Margin</h3>
+              <img src="./img/margin.png" alt="margin 부분" />
+              <p>요소와 요소간의 여백이다.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="formtest">
+      <div class="container">
+        <h1>저의 홈페이지가 마음에 드시나요?</h1>
+        <form>
+          <input type="radio" name="manjock" /> 매우만족
+          <input type="radio" name="manjock" /> 만족
+          <input type="radio" name="manjock" /> 불만족
+          <input type="radio" name="manjock" /> 매우불만족
+          <button type="submit" class="button_1">전송하기</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2021, 중부대학교 정보보호학과 박윤지</p>
+    </footer>
+  </body>
+</html>
